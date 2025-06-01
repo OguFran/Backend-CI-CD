@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t ogufran/backend-ci-cd:latest .
+        run: docker build -t ogugua/backend-ci-cd:latest .
 
       - name: Push Docker image
-        run: docker push ogufran/backend-ci-cd:latest
+        run: docker push ogugua/backend-ci-cd:latest
